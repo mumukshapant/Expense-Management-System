@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww29200\viewh15460\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 The installation instructions are as per macOS\
+\
+1. Run the file \'93db_dump.sql\'94 using MySql Workbench. This is the data dump.\
+     we have created a single file to pull all the data for the table expense_management_system.\
+\
+-> It contains data for 1 admin with username \'93admin1\'94 and two users with username \'93dhruv\'94 and \'93mumuksha\'94.\
+-> you can create any number of users using the signup portal (web app ) \
+\
+\
+2. Running the JAVA application: \
+   \
+   a. We have created project using java 17. \
+\
+       Download link: \'93{\field{\*\fldinst{HYPERLINK "https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html"}}{\fldrslt https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html}}\'94\
+      \
+      Also, java compiler - IntelliJ : \'93{\field{\*\fldinst{HYPERLINK "https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1&code=IIC"}}{\fldrslt https://www.jetbrains.com/idea/download/download-thanks.html?platform=macM1&code=IIC}}\'94\
+\
+    b. Unzip project java application : \'93Expense-Management.zip\'94\
+\
+    c. Open the project in IntelliJ and run \'93
+\f1\fs26 ExpenseManagementApplication.java
+\f0\fs24 \'94 file to run the application.\
+\
+    d.  Make sure that the database properties for the project is configured correctly :\
+\
+ 	In project root path \'93src/main/resources\'94 -> open applications.properties file to configure the database url, username and password. \
+           For now the DB is configured with :\
+ 	URL : \'94localhost:3306\'94\
+	username: \'93root\'94\
+	password: \'93root\'94\
+\
+   e. The application runs on \'93localhost:8080\'94, make sure the port is free to run the application. \
+\
+   f. Once the application runs successfully, you should be able to open our API documentation and consumer : \'93{\field{\*\fldinst{HYPERLINK "http://localhost:8080/swagger-ui.html"}}{\fldrslt http://localhost:8080/swagger-ui.html}}\'94. \
+\
+3. Now once both the above mentioned steps are completed, Now we will run the react application to run the user interface:\
+\
+ a. Make sure to download nodejs version 16  :  \'93{\field{\*\fldinst{HYPERLINK "https://nodejs.org/en/download"}}{\fldrslt https://nodejs.org/en/download}}\'94\
+\
+ b. Now, we need to unzip : \'93LogIt_UI.zip\'94, once the unzip is done.\
+\
+ c. Go to root folder \'93Logit/\'94 in terminal.\
+\
+ d. fetch all required modules using command \'93npm install\'94 \
+\
+ e. now run it by typing: \'93npm start\'94 on the terminal \
+\
+   On any browser open \'93{\field{\*\fldinst{HYPERLINK "http://localhost:3000/"}}{\fldrslt http://localhost:3000/}}\'94 to access the application. \
+\
+\
+}
